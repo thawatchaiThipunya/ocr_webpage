@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --card:#0f172a;
+  --fg:#e2e8f0;
+  --muted:#94a3b8;
+  --accent:#22d3ee;
+}
+body{ color:var(--fg); }
+.card{ background:var(--card); border:1px solid rgba(255,255,255,.08); border-radius:16px; }
+.btn{ @apply px-4 py-2 rounded-xl; background: linear-gradient(135deg,#2563eb,#06b6d4); color:white; }
+.btn-ghost{ @apply px-4 py-2 rounded-xl border border-slate-600; background: transparent; color: var(--fg); }
+input[type=file]::file-selector-button{ @apply px-3 py-1 mr-2 rounded-lg bg-slate-700 text-slate-200; }
+.drop{ border:2px dashed #334155; }
